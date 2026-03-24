@@ -15,6 +15,7 @@ dependencies = [
     "matplotlib",
     "pytest",
     "mkdocs",
+    "python-gnupg",
 ]
 
 [tool.setuptools]
