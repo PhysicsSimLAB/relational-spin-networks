@@ -1,12 +1,12 @@
 # Relational Spin Networks
 
-This repository contains the computational scaffold for Relational Spin Network (RSN) experiments in the PhysicsSimLAB organization. It is being structured to support auditable numerical experiments, provenance-aware outputs, and staged translation of the RSN research program into explicit computational artifacts.
+This repository contains the computational foundation for Relational Spin Network (RSN) experiments in the PhysicsSimLAB organization. It is structured to support auditable numerical experiments, provenance-aware outputs, and staged translation of the RSN research program into explicit computational artifacts.
 
 ## Status
 
-Repository status: **scaffold**.
+Repository status: **planned** with foundational repository structure already **implemented**.
 
-This repository is in an early architecture phase. Theory-specific numerical implementations are still being introduced incrementally, and the present goal is to establish a clean, extensible, and auditable research codebase before locking in full experiment logic.
+The repository has established its initial package layout, internal protocol documentation, architecture boundaries, and placeholder module surfaces. Theory-specific numerical implementations, executable experiment paths, and verification coverage are still being introduced incrementally.
 
 ## Research Framing
 
@@ -16,7 +16,7 @@ Within the RSN note, spacetime is treated relationally rather than as a primitiv
 
 These theory documents are external references, not internal source-of-truth code specifications. The role of this repository is to progressively translate selected parts of that framework into explicit, testable, and reproducible computational modules and experiment pipelines.
 
-For the repository-facing experiment specification and implementation-planning layer, see `docs/experiment_protocol.md`.
+For the repository-facing experiment specification and implementation-planning layer, see `docs/experiment_protocol.md`. For package layering and dependency-boundary guidance, see `ARCHITECTURE.md`.
 
 ## Initial Repository Layout
 
@@ -62,7 +62,7 @@ At a high level, those experiments are expected to cover defect freeze-out, fini
 
 The repository is being prepared for provenance-aware output handling from the start. The intended run organization follows an `outputs/<experiment>/<run_tag>/` pattern with metadata summaries and checksum tracking as planned features.
 
-These are currently **planned** features built on top of a **scaffold** repository state. The repository layout anticipates checksum manifests, run metadata, and re-analysis support, but those guarantees are not yet **implemented** or **validated**.
+These are currently **planned** features built on top of an **implemented** repository skeleton. The repository layout anticipates checksum manifests, run metadata, and re-analysis support, but those guarantees are not yet fully **implemented** or **validated**.
 
 ## Environment
 
@@ -72,8 +72,8 @@ These are currently **planned** features built on top of a **scaffold** reposito
 
 ## Immediate Next Steps
 
-1. Finalize top-level project framing
-2. Define first domain modules
-3. Add provenance utilities
-4. Introduce first experiment stubs
-5. Begin testable theory-to-code mapping
+1. Implement the first theory-facing primitive with explicit verification targets
+2. Add executable provenance emission for metadata and checksum manifests
+3. Introduce the first runnable experiment path
+4. Add initial theory-to-code tests
+5. Establish reduced output and re-analysis conventions
