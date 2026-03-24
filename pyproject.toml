@@ -5,8 +5,10 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "relational-spin-networks"
 version = "0.1.0"
-description = "Scaffold for a computational-physics project."
+description = "Computational scaffold for relational spin network experiments."
+readme = "README.md"
 requires-python = ">=3.11,<3.12"
+authors = [{ name = "PhysicsSimLAB" }]
 dependencies = [
     "numpy",
     "h5py",
