@@ -12,3 +12,6 @@ dist/
 htmlcov/
 outputs/**/*
 !outputs/.gitkeep
+
+# Decrypted reference files
+references/encrypted/*.pdf
